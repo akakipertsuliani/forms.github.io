@@ -1,0 +1,224 @@
+* {
+    outline: none;
+    font-family: monospace;
+}
+
+.example-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-input {
+    width: 300px;
+    height: 30px;
+    text-indent: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 3px solid #027502;
+    border-radius: 9px;
+}
+
+.date-time-input {
+    width: 285px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    border: 3px solid #d6b006;
+    border-radius: 9px;
+    font-size: 17px;
+}
+
+#check-input {
+    margin: 10px 0 10px 0;
+    display: flex;
+    text-align: center;
+    max-height: 100px;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#check-input input[type=checkbox] {
+    display: inline-flex;
+    justify-content: center;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    --webkit-appearance: none;
+    background-color: green;
+    border-radius: 2px;
+}
+
+#check-input input[type=checkbox]::after {
+    content: "\2713";
+    font-weight: 900;
+    color: #FFF;
+    display: none;
+}
+
+#check-input input[type=checkbox]:checked::after {
+    display: inline-block;
+}
+
+#check-input input[type=radio] {
+    display: inline-flex;
+    justify-content: center;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    --webkit-appearance: none;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#check-input input[type=radio]:checked {
+    border: 3px solid green;   
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+input[type=file] {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 11px;
+    background-color: rgb(96, 104, 173);
+    align-items: center;
+    box-shadow: 5px 5px 5px #202081;
+}
+
+::-webkit-file-upload-button {
+    border: none;
+    background-color: #df2f10;
+}
+
+.button-type {
+    border: none;
+    border-radius: 3px;
+    background-color: #202081;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 7px 1px #4141ff;
+    transition: 0.3s;
+}
+
+.button-type:hover {
+    background-color: #4141ff;
+    box-shadow: 0 7px 1px #202081;
+}
+
+.form-gorup {
+    display: flex;
+    text-align: center;
+}
+
+.form-gorup label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-gorup input {
+    display: inline-flex;
+    justify-content: center;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    --webkit-appearance: none;
+    background-color: #180588;
+    border-radius: 50%;   
+}
+
+.form-gorup input:checked {
+    border: 3px solid #180588;   
+    background-color: green;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.form-group2 {
+    margin: 10px 0 10px 0;
+    display: flex;
+    text-align: center;
+    max-height: 100px;
+}
+
+.form-group2 label {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.form-group2 input[type=checkbox] {
+    display: inline-flex;
+    justify-content: center;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    --webkit-appearance: none;
+    background-color: #180588;
+    border-radius: 2px;
+}
+
+.form-group2 input[type=checkbox]::after {
+    content: "\2713";
+    font-weight: 900;
+    color: green;
+    display: none;
+}
+
+.form-group2 input[type=checkbox]:checked::after {
+    display: inline-block;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 9px;
+    background-color: #9e10df;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    color: white;
+    box-shadow: 0 0 5px #0a6602;
+    background-color: #5b0c80;
+    font-weight: 900;
+}
+
+#success-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#success-container {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(17, 77, 17);
+    box-shadow: 10px 10px 10px lightgreen;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#success-header {
+    font-family: monospace;
+    font-size: 50px;
+    max-width: 600px;
+    text-align: center;
+    color: #FFF;
+    
+}
